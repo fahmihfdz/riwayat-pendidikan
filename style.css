@@ -1,0 +1,141 @@
+*, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Chakra Petch", sans-serif;
+}
+
+body {
+    height: 500px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+    gap: 10px;
+    /* border: 2px solid red; */
+    width: 100%;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    /* position:fixed; */
+}
+
+.navbar a {
+    display: flex;
+    justify-content: end;
+    margin-top: 10px;
+    color: rgba(0, 0, 0, 0.6);
+    background-color: #eaeaea;
+    padding: 6px;
+    border-radius: 50%;
+}
+
+.navbar a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: rgb(11, 197, 197);
+    transition: .3s ease-in-out;
+}
+
+.container {
+    background-image: url(bg2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 800px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    /* border: 2px solid green; */
+}
+
+.row {
+    /* margin-top: 1rem; */
+    width: 38%;
+    height: 15rem;
+    margin-left: 30%;
+    border-bottom: 2px solid black;
+    text-align: center;
+    /* border: 2px solid red; */
+}
+
+.row-2 {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    width: 36%;
+    padding: 10px;
+    margin-left: 31%;
+    margin-top: 35px;
+    /* border: 2px solid brown; */
+}
+
+.row-2 a {
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: rgb(16, 209, 209);
+    border-radius: 5px;
+    color: black;
+}
+
+.row-2 a:hover {
+    background-color: rgb(4, 148, 148) ;
+    color: #eaeaea;
+    transition: .2s ease-in-out;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 300px) and (max-width: 1067px) {
+    .container {
+        height: auto;
+    }
+    
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50%;
+        gap: 0;
+        position: absolute;
+    }
+
+    .navbar a {
+        background: none;
+    }
+
+    .wrapper {
+        position: relative;
+        font-size: 5px;
+    }
+
+    .row{
+        /* border: 1px solid red; */
+        margin-top: 20px;
+        margin-left: 25%;
+        width: 50%;
+        height: 10rem;
+    }
+
+    .row p {
+        font-size: 8px;
+    }
+
+    .row-2 {
+        /* border: 1px solid green; */
+        margin-top: 10px;
+        margin-left: 25%;
+        width: 50%;
+        font-size: 10px;
+    }
+
+}
+
+
+
